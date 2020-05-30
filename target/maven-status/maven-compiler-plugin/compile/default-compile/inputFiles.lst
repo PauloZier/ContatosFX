@@ -3,13 +3,13 @@
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/model/implementation/Contato.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/model/implementation/Email.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/enumerators/Views.java
-/home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/model/definition/Action.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/controller/EmailDialogController.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/util/PairImpl.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/factory/FXMLFactory.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/util/HibernateHelper.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/model/implementation/Fone.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/repository/Repository.java
+/home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/util/Action.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/util/TextUtils.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/model/definition/BaseModel.java
 /home/zier/NetBeansProjects/ContatosFX/src/main/java/org/contatosapp/util/Pair.java

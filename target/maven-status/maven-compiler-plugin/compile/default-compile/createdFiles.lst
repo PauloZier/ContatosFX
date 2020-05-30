@@ -6,7 +6,7 @@ org/contatosapp/app/Session.class
 org/contatosapp/factory/RepositoryFactory.class
 org/contatosapp/util/Pair.class
 org/contatosapp/util/PairImpl.class
-org/contatosapp/model/definition/Action.class
+org/contatosapp/util/Action.class
 org/contatosapp/util/TextUtils.class
 org/contatosapp/model/implementation/Fone.class
 org/contatosapp/model/definition/CrudRepository.class

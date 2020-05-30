@@ -271,7 +271,7 @@ public class MainController implements Initializable {
         FXUtils.alertDialog(Alert.AlertType.CONFIRMATION, "Controle de Contatos", "Deseja mesmo sair?",
             result -> {
                 if (ButtonType.OK.equals(result))
-                    System.exit(1);
+                    System.exit(0);
             });
     }
 

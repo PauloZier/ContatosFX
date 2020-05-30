@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="217.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.contatosapp.controller.EmailDialogController">
+   <children>
+      <Pane layoutX="10.0" layoutY="8.0" prefHeight="200.0" prefWidth="503.0" style="-fx-border-color: #CACACA; -fx-border-radius: 1%;">
+         <children>
+            <ImageView fx:id="imgEmail" fitHeight="46.0" fitWidth="47.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="82.0" layoutY="40.0" text="Email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txEmail" layoutX="31.0" layoutY="115.0" prefHeight="26.0" prefWidth="436.0" promptText="Email">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btCancelar" layoutX="357.0" layoutY="159.0" minWidth="110.0" mnemonicParsing="false" onAction="#btCancelarClick" text="Cancelar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btLimpar" layoutX="238.0" layoutY="159.0" minWidth="110.0" mnemonicParsing="false" onAction="#btLimparClick" text="Limpar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btSalvar" layoutX="118.0" layoutY="159.0" minWidth="110.0" mnemonicParsing="false" onAction="#btSalvarClick" text="Salvar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txId" alignment="CENTER_RIGHT" editable="false" layoutX="31.0" layoutY="77.0" prefHeight="29.0" prefWidth="120.0" promptText="Id">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

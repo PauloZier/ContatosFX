@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="1298.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.contatosapp.controller.MainController">
+   <children>
+      <Pane layoutX="12.0" layoutY="13.0" prefHeight="759.0" prefWidth="1275.0" style="-fx-border-color: #ACACAC; -fx-border-radius: 0.5%;">
+         <children>
+            <TableView fx:id="tableContatos" layoutX="14.0" layoutY="49.0" onMouseClicked="#tableContatosMouseClick" prefHeight="702.0" prefWidth="341.0" style="-fx-border-radius: 0.5%;">
+              <columns>
+                <TableColumn fx:id="nomeColumn" editable="false" minWidth="341.0" prefWidth="341.0" text="Contatos" />
+                  <TableColumn fx:id="idColumn" minWidth="0.0" prefWidth="0.0" resizable="false" text="Id" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txConsulta" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="301.0" promptText="Pesquisar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btConsultar" layoutX="321.0" layoutY="14.0" mnemonicParsing="false" onAction="#btConsultarClick" prefHeight="30.0" prefWidth="34.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Pane layoutX="367.0" layoutY="14.0" prefHeight="737.0" prefWidth="896.0" style="-fx-border-radius: 0.5%; -fx-border-color: #ACACAC;">
+               <children>
+                  <TextField fx:id="txId" alignment="CENTER_RIGHT" editable="false" layoutX="31.0" layoutY="50.0" prefHeight="28.0" prefWidth="120.0" promptText="Id">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="80.0" layoutY="15.0" text="Contato">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txNome" layoutX="159.0" layoutY="50.0" prefHeight="29.0" prefWidth="701.0" promptText="Nome">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txObservacoes" layoutX="31.0" layoutY="86.0" prefHeight="29.0" prefWidth="829.0" promptText="Observações">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TableView fx:id="tableFones" editable="true" layoutX="31.0" layoutY="121.0" onMouseClicked="#tableFoneMouseClick" prefHeight="508.0" prefWidth="418.0" style="-fx-border-radius: 0.5%;">
+                    <columns>
+                      <TableColumn fx:id="foneColumn" editable="false" prefWidth="275.0" text="Fone" />
+                      <TableColumn fx:id="tipoColumn" editable="false" prefWidth="142.0" text="Tipo" />
+                        <TableColumn fx:id="idFoneColumn" editable="false" minWidth="0.0" prefWidth="0.0" resizable="false" text="Id" visible="false" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tableEmail" editable="true" layoutX="459.0" layoutY="121.0" onMouseClicked="#tableEmailMouseClick" prefHeight="508.0" prefWidth="401.0" style="-fx-border-radius: 0.5%;">
+                     <columns>
+                        <TableColumn fx:id="emailColumn" editable="false" minWidth="401.0" prefWidth="401.0" resizable="false" text="Email" />
+                        <TableColumn fx:id="idEmailColumn" editable="false" minWidth="0.0" prefWidth="0.0" resizable="false" text="Id" visible="false" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="btSair" layoutX="750.0" layoutY="696.0" minWidth="110.0" mnemonicParsing="false" onAction="#btSairClick" text="Sair">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btSalvar" layoutX="393.0" layoutY="696.0" minWidth="110.0" mnemonicParsing="false" onAction="#btSalvarClick" text="Salvar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btExcluir" layoutX="631.0" layoutY="696.0" minWidth="110.0" mnemonicParsing="false" onAction="#btExcluirClick" text="Excluir">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btLimpar" layoutX="512.0" layoutY="696.0" minWidth="110.0" mnemonicParsing="false" onAction="#btLimparClick" text="Limpar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fx:id="imgContato" fitHeight="36.0" fitWidth="47.0" layoutX="31.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="btExcluirFone" layoutX="414.0" layoutY="635.0" mnemonicParsing="false" onAction="#btExcluirFoneClick" prefHeight="30.0" prefWidth="34.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btNovoFone" layoutX="374.0" layoutY="635.0" mnemonicParsing="false" onAction="#btNovoFoneClick" prefHeight="30.0" prefWidth="34.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btExcluirEmail" layoutX="827.0" layoutY="635.0" mnemonicParsing="false" onAction="#btExcluirEmailClick" prefHeight="30.0" prefWidth="34.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btNovoEmail" layoutX="787.0" layoutY="635.0" mnemonicParsing="false" onAction="#btNovoEmailClick" prefHeight="30.0" prefWidth="34.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -15,7 +15,7 @@ import org.contatosapp.model.definition.BaseModel;
 
     @NamedQuery(
         name = "Contato.findByName",
-        query = "SELECT new org.contatosapp.model.implementation.Contato(c.id, c.nome) FROM Contato c WHERE c.nome LIKE :nome ORDER BY nome"
+        query = "SELECT new org.contatosapp.model.implementation.Contato(c.id, c.nome) FROM Contato c WHERE LOWER(c.nome) LIKE LOWER(:nome) ORDER BY nome"
     )
 })
 
